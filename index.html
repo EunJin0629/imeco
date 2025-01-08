@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>아임에코몰</title>
+ <link rel="icon" href="./img/favicon.ico">
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+ <link rel="stylesheet" href="./css/reset.css">
+ <link rel="stylesheet" href="./css/common.css">
+ <link rel="stylesheet" href="./css/style.css">
+ <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+ <script src="https://kit.fontawesome.com/4dc87784b3.js" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+ <script src="./js/common.js" defer></script>
+ <script src="./js/script.js" defer></script>
+</head>
+<body>
+ <div class="wrap">
+  <header id="header">
+   <div class="container">
+    <div class="htop">
+     <div class="logo">
+      <a href="index.html">
+       <img src="./img/logo.svg" alt="x">
+      </a>
+     </div>
+     <!-- logo end -->
+     <div class="login">
+      <ul>
+       <li><a href="login.html">로그인</a><span>|</span></li>
+       <li><a href="join.html">회원가입</a><span>|</span></li>
+       <li class="center"><p>고객센터</p>
+        <ul class="center_list">
+         <li><a href="notice.html">공지사항</a></li>
+         <li><a href="#">자주하는문의</a></li>
+         <li><a href="#">1:1문의</a></li>
+         <li><a href="#">제안하기</a></li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+     <!-- login end -->
+    </div>
+    <!-- htop end -->
+<div class="hbottom">
+ <div class="left">
+  <ul class="category">
+   <li>
+    <p><img src="./img/category-btn.svg" alt="x"><span>카테고리</span></p>
+   </li>
+   <ul class="sub_category">
+    <li><a href="#"><img src="./img/category-icon1.svg" alt="x"><p>정기배송</p></a></li>
+    <li><a href="#"><img src="./img/category-icon2.svg" alt="x"><p>그린샵</p></a></li>
+    <li><a href="#"><img src="./img/category-icon3.svg" alt="x"><p>에코딜</p></a></li>
+    <li><a href="#"><img src="./img/category-icon4.svg" alt="x"><p>베스트</p></a></li>
+    <li><a href="#"><img src="./img/category-icon5.svg" alt="x"><p>MD추천</p></a></li>
+    <li><a href="#"><img src="./img/category-icon6.svg" alt="x"><p>생수음료</p></a></li>
+    <li><a href="#"><img src="./img/category-icon7.svg" alt="x"><p>식품</p></a></li>
+    <li><a href="#"><img src="./img/category-icon8.svg" alt="x"><p>생활용품</p></a></li>
+    <li><a href="#"><img src="./img/category-icon9.svg" alt="x"><p>뷰티</p></a></li>
+    <li><a href="#"><img src="./img/category-icon10.svg" alt="x"><p>주방</p></a></li>
+    <li><a href="#"><img src="./img/category-icon11.svg" alt="x"><p>욕실</p></a></li>
+    <li><a href="#"><img src="./img/category-icon12.svg" alt="x"><p>패션잡화</p></a></li>
+    <li><a href="#"><img src="./img/category-icon13.svg" alt="x"><p>유아동</p></a></li>
+    <li><a href="#"><img src="./img/category-icon14.svg" alt="x"><p>반려동물</p></a></li>
+   </ul>
+  </ul>
+<!-- category end -->
+      <ul class="menu">
+       <li><a href="#">i'm eco</a></li>
+       <li><a href="#">제로웨이스트</a></li>
+       <li><a href="#">이벤트</a></li>
+      </ul>
+     </div>
+     <!-- left end -->
+     <div class="right">
+      <form action="" method="get">
+       <ul class="search">
+        <li><input type="text" placeholder="아임에코 고마운샘"><img src="./img/search-icon.svg" alt="x"></li>
+       </ul>
+      </form>
+      <!-- search form end -->
+      <div class="my">
+       <ul>
+        <li><a href="#"><img src="./img/wish-icon.svg" alt="x"></a></li>
+        <li><a href="#"><img src="./img/my-icon.svg" alt="x"></a></li>
+        <li><a href="cart.html"><img src="./img/cart-icon.svg" alt="x"></a></li>
+       </ul>
+      </div>
+      <!-- my end -->
+     </div>
+     <!-- right end -->
+    </div>
+    <!-- hbottom end -->
+   </div>
+   <!-- header container end -->
+  </header>
+  <!-- header end -->
+  <div class="header_null"></div>
+  <!-- header에 fixed값으로 인해 nav영역에 겹쳐짐 >> 이를 방지하기위해 빈박스한개 생성 -->
+  <nav id="main">
+   <div class="container">
+    <div class="link_wrap">
+      <ul id="link_list">
+        <li><a href="#"><p><img src="./img/category-icon1.svg" alt="x"></p><span>정기배송</span></a></li>
+        <li><a href="#"><p><img src="./img/category-icon2.svg" alt="x"></p><span>그린샵</span></a></li>
+        <li><a href="#"><p><img src="./img/category-icon3.svg" alt="x"></p><span>에코딜</span></a></li>
+        <li><a href="#"><p><img src="./img/category-icon4.svg" alt="x"></p><span>베스트</span></a></li>
+        <li><a href="#"><p><img src="./img/category-icon5.svg" alt="x"></p><span>MD추천</span></a></li>
+        <li><a href="#"><p><img src="./img/category-icon6.svg" alt="x"></p><span>생수음료</span></a></li>
+        <li><a href="#"><p><img src="./img/category-icon7.svg" alt="x"></p><span>식품</span></a></li>
+        <li><a href="#"><p><img src="./img/category-icon8.svg" alt="x"></p><span>생활용품</span></a></li>
+        <li><a href="#"><p><img src="./img/category-icon9.svg" alt="x"></p><span>뷰티</span></a></li>
+        <li><a href="#"><p><img src="./img/category-icon10.svg" alt="x"></p><span>주방</span></a></li>
+        <li><a href="#"><p><img src="./img/category-icon11.svg" alt="x"></p><span>욕실</span></a></li>
+        <li><a href="#"><p><img src="./img/category-icon12.svg" alt="x"></p><span>패션잡화</span></a></li>
+        <li><a href="#"><p><img src="./img/category-icon13.svg" alt="x"></p><span>유아동</span></a></li>
+        <li><a href="#"><p><img src="./img/category-icon14.svg" alt="x"></p><span>반려동물</span></a></li>
+      </ul>
+    </div>
+    <!-- link_wrap end -->
+      <div id="prev">
+        <button type="button"><i class="fa-solid fa-angle-left"></i></button>
+      </div>
+      <div id="next">
+        <button type="button"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+   </div>
+   <!-- nav container -->
+   <div class="swiper mySwiper">
+    <div class="swiper-wrapper slide_wrap">
+      <div class="swiper-slide slide s1">
+        <p class="txt1">We are closer to the zero.</p>
+      <p class="txt2">더 가볍게, 더무해하게, 아임에코는 환경에남기는 발자국을 zero에 가깝게 만듭니다. <br> 지구와 나에게 더 가치있는 소비를 하세요.</p>
+      <p class="txt3"><a href="#">zero-waste</a></p>
+      </div>
+      <div class="swiper-slide slide s2">
+        <p class="txt1">현대카드 Our Bag <span class="txt1_span1">with</span><span class="txt1_span2"> I'm eco</span></p>
+      <p class="txt2">현대카드와 아임에코에서 회수한 PET병을 재활용하여 만든 <br> Our Bag을 지금 만나보세요!</p>
+      <p class="txt3"><a href="#">구매하러 가기</a></p>
+      </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+  </nav>
+  <!-- main end -->
+  <section id="contents">
+   <div class="container">
+    <div class="con1">
+      <div class="tit">
+        <a href="#">정기배송 ></a>
+        <p>정기배송 & 에코회수로 깔끔한 zero-waste</p>
+      </div>
+      <!-- tit end -->
+      <div class="product_wrap">
+       <div class="product_box">
+        <a href="product.html">
+          <ul class="pro_img">
+            <li><img src="./img/rd-img1.png" alt="x"></li>
+          </ul>
+          <ul class="pro_tit">
+            <li>[아임에코 Premium] 고마운샘</li>
+          </ul>
+          <ul class="pro_txt">
+            <li>100% 자연으로 돌아가는 고마운샘. 2년간의 연구개발 끝에 탄생한 고마운샘은 세계에서 가장 탄소배출량은 낮고, 미세플라스틱 걱정없는 나와 지구에게 고마운 물입니다.</li>
+          </ul>
+        </a>
+       </div>
+       <!-- product_box1 end -->
+       <div class="product_box">
+        <a href="#">
+          <ul class="pro_img">
+            <li><img src="./img/rd-img2.jpg" alt="x"></li>
+          </ul>
+          <ul class="pro_tit">
+            <li>[아임에코] 저탄소 그린 아이스컵</li>
+          </ul>
+          <ul class="pro_txt">
+            <li>매일 마시는 커피 한 잔, 그 속에서도 아임에코는 저탄소를 고민합니다. 지구에 대한 당신의 무거운 마음을 덜어줄 착한 아이스컵으로 더 가치있는 소비를 시작하세요.</li>
+          </ul>
+        </a>
+       </div>
+       <!-- product_box2 end -->
+       <div class="product_box">
+        <a href="#">
+          <ul class="pro_img">
+            <li><img src="./img/rd-img3.jpg" alt="x"></li>
+          </ul>
+          <ul class="pro_tit">
+            <li>[아임에코] 친환경 그린 리유저블 리빙웨어</li>
+          </ul>
+          <ul class="pro_txt">
+            <li>사탕수수 소재로 만든 지속가능한 리빙웨어 그린 리유저블은 미세플라스틱으로부터 안전한 저탄소 친환경 제품입니다.</li>
+          </ul>
+        </a>
+       </div>
+       <!-- product_box3 end -->
+       <div class="product_box">
+        <a href="#">
+          <ul class="pro_img">
+            <li><img src="./img/rd-img4.jpg" alt="x"></li>
+          </ul>
+          <ul class="pro_tit">
+            <li>[아임에코] 가벼운샘</li>
+          </ul>
+          <ul class="pro_txt">
+            <li>14.2g으로 더 가벼워진 가벼운샘. 플라스틱 사용량을 최소화하여 까다로운 저탄소 인증을 거친, 진짜 친환경 생수인 가벼운샘으로 지구를 더 가볍게 만들어보세요.</li>
+          </ul>
+        </a>
+       </div>
+       <!-- product_box4 end -->
+      </div>
+    </div>
+    <!-- con1 end -->
+<div class="con2">
+   <div class="tit">
+     <a href="#">그린샵 ></a>
+     <p>그린샵 제품을 이용하면 에코포인트로 보답할게요.</p>
+   </div>
+  <!-- con2 tit end -->
+  <div class="gshop_wrap">
+   <div class="gshop_box">
+    <a href="#">
+      <ul class="gs_img">
+        <li><img src="./img/gsimg1.png" alt="x"></li>
+      </ul>
+      <ul class="gs_tit">
+        <li>저탄소 · 재활용 · 생분해</li>
+      </ul>
+      <ul class="gs_txt">
+        <li>[아임에코] 미세플라스틱 걱정 없는 사탕수수</li>
+        <li><p class="price">25,000원</p></li>
+      </ul>
+      <ul class="gs_icon">
+        <li><img src="./img/preservation-koala (1).svg" alt="x"></li>
+        <li>
+          <p>코알라 102마리 보존중 <span>10,228%</span></p>
+          <p class="badge">기부목표 달성시 코알라뱃지 지급</p>
+        </li>
+      </ul>
+    </a>
+   </div>
+   <!-- gshop_box1 end -->
+   <div class="gshop_box">
+    <a href="#">
+      <ul class="gs_img">
+        <li><img src="./img/gsimg2.png" alt="x"></li>
+      </ul>
+      <ul class="gs_tit">
+        <li>저탄소 · 재활용 · 생분해</li>
+      </ul>
+      <ul class="gs_txt">
+        <li>[아임에코] 가벼운샘 2L x 6병</li>
+        <li><p class="price">4,900원</p></li>
+      </ul>
+      <ul class="gs_icon">
+        <li><img src="./img/preservation-koala (1).svg" alt="x"></li>
+        <li>
+          <p>코알라 102마리 보존중 <span>10,228%</span></p>
+          <p class="badge">기부목표 달성시 코알라뱃지 지급</p>
+        </li>
+      </ul>
+    </a>
+   </div>
+   <!-- gshop_box2 end -->
+   <div class="gshop_box">
+    <a href="#">
+      <ul class="gs_img">
+        <li><img src="./img/gsimg3.jpg" alt="x"></li>
+      </ul>
+      <ul class="gs_tit">
+        <li>저탄소 · 재활용 · 생분해</li>
+      </ul>
+      <ul class="gs_txt">
+        <li>[아임에코] 가벼운샘 500mL x 20병</li>
+        <li><p class="price">5,900원</p></li>
+      </ul>
+      <ul class="gs_icon">
+        <li><img src="./img/preservation-koala (1).svg" alt="x"></li>
+        <li>
+          <p>코알라 102마리 보존중 <span>10,228%</span></p>
+          <p class="badge">기부목표 달성시 코알라뱃지 지급</p>
+        </li>
+      </ul>
+    </a>
+   </div>
+   <!-- gshop_box3 end -->
+   <div class="gshop_box">
+    <a href="#">
+      <ul class="gs_img">
+        <li><img src="./img/gsimg4.jpg" alt="x"></li>
+      </ul>
+      <ul class="gs_tit">
+        <li>저탄소 · 재활용 · 생분해</li>
+      </ul>
+      <ul class="gs_txt">
+        <li>[아임에코] 가벼운샘 330mL x 20병</li>
+        <li><p class="price">6,500원</p></li>
+      </ul>
+      <ul class="gs_icon">
+        <li><img src="./img/preservation-koala (1).svg" alt="x"></li>
+        <li>
+          <p>코알라 102마리 보존중 <span>10,228%</span></p>
+          <p class="badge">기부목표 달성시 코알라뱃지 지급</p>
+        </li>
+      </ul>
+    </a>
+   </div>
+   <!-- gshop_box4 end -->
+   <div class="gshop_box">
+    <a href="#">
+      <ul class="gs_img">
+        <li><img src="./img/gsimg5.jpg" alt="x"></li>
+      </ul>
+      <ul class="gs_tit">
+        <li>저탄소 · 재활용 · 생분해</li>
+      </ul>
+      <ul class="gs_txt">
+        <li>[아임에코] 30% 사탕수수 용기 깨끗한샘 500mL x 20병</li>
+        <li><p class="price">6,900원</p></li>
+      </ul>
+      <ul class="gs_icon">
+        <li><img src="./img/preservation-koala (1).svg" alt="x"></li>
+        <li>
+          <p>코알라 102마리 보존중 <span>10,228%</span></p>
+          <p class="badge">기부목표 달성시 코알라뱃지 지급</p>
+        </li>
+      </ul>
+    </a>
+   </div>
+   <!-- gshop_box5 end -->
+   <div class="gshop_box">
+    <a href="#">
+      <ul class="gs_img">
+        <li><img src="./img/gsimg6.jpg" alt="x"></li>
+      </ul>
+      <ul class="gs_tit">
+        <li>저탄소 · 재활용 · 생분해</li>
+      </ul>
+      <ul class="gs_txt">
+        <li>[이노푸드] 바리의꿈 유기농두유, 190mL, 16개입</li>
+        <li><p class="price">19,900원</p></li>
+      </ul>
+      <ul class="gs_icon">
+        <li><img src="./img/preservation-koala (1).svg" alt="x"></li>
+        <li>
+          <p>코알라 102마리 보존중 <span>10,228%</span></p>
+          <p class="badge">기부목표 달성시 코알라뱃지 지급</p>
+        </li>
+      </ul>
+    </a>
+   </div>
+   <!-- gshop_box6 end -->
+   <div class="gshop_box">
+    <a href="#">
+      <ul class="gs_img">
+        <li><img src="./img/gsimg7.jpg" alt="x"></li>
+      </ul>
+      <ul class="gs_tit">
+        <li>저탄소 · 재활용 · 생분해</li>
+      </ul>
+      <ul class="gs_txt">
+        <li>[바스틀리] 100% 천연 대나무 친환경 토일렛티슈, 12롤</li>
+        <li><p class="price">18,900원</p></li>
+      </ul>
+      <ul class="gs_icon">
+        <li><img src="./img/preservation-koala (1).svg" alt="x"></li>
+        <li>
+          <p>코알라 102마리 보존중 <span>10,228%</span></p>
+          <p class="badge">기부목표 달성시 코알라뱃지 지급</p>
+        </li>
+      </ul>
+    </a>
+   </div>
+   <!-- gshop_box7 end -->
+   <div class="gshop_box">
+    <a href="#">
+      <ul class="gs_img">
+        <li><img src="./img/gsimg8.jpg" alt="x"></li>
+      </ul>
+      <ul class="gs_tit">
+        <li>저탄소 · 재활용 · 생분해</li>
+      </ul>
+      <ul class="gs_txt">
+        <li>[NELLIE'S] 에코인증 넬리 소다 세탁세제 리필 파우치, 100회, 1.5kg</li>
+        <li><p class="price">24,900원</p></li>
+      </ul>
+      <ul class="gs_icon">
+        <li><img src="./img/preservation-koala (1).svg" alt="x"></li>
+        <li>
+          <p>코알라 102마리 보존중 <span>10,228%</span></p>
+          <p class="badge">기부목표 달성시 코알라뱃지 지급</p>
+        </li>
+      </ul>
+    </a>
+   </div>
+   <!-- gshop_box8 end -->
+   <div class="gshop_box">
+    <a href="#">
+      <ul class="gs_img">
+        <li><img src="./img/gsimg9.jpg" alt="x"></li>
+      </ul>
+      <ul class="gs_tit">
+        <li>저탄소 · 재활용 · 생분해</li>
+      </ul>
+      <ul class="gs_txt">
+        <li>[NELLIE'S] 에코인증 80회 쓰는 넬리 베이비 세탁세제, 틴케이스, 1kg</li>
+        <li><p class="price">23,500원</p></li>
+      </ul>
+      <ul class="gs_icon">
+        <li><img src="./img/preservation-koala (1).svg" alt="x"></li>
+        <li>
+          <p>코알라 102마리 보존중 <span>10,228%</span></p>
+          <p class="badge">기부목표 달성시 코알라뱃지 지급</p>
+        </li>
+      </ul>
+    </a>
+   </div>
+   <!-- gshop_box9 end -->
+   <div class="gshop_box">
+    <a href="#">
+      <ul class="gs_img">
+        <li><img src="./img/gsimg10.png" alt="x"></li>
+      </ul>
+      <ul class="gs_tit">
+        <li>저탄소 · 재활용 · 생분해</li>
+      </ul>
+      <ul class="gs_txt">
+        <li>[널담] 100% 식물성 저당 비건 베이글 3종 세트, 6개입</li>
+        <li><p class="price">20,000원</p></li>
+      </ul>
+      <ul class="gs_icon">
+        <li><img src="./img/preservation-koala (1).svg" alt="x"></li>
+        <li>
+          <p>코알라 102마리 보존중 <span>10,228%</span></p>
+          <p class="badge">기부목표 달성시 코알라뱃지 지급</p>
+        </li>
+      </ul>
+    </a>
+   </div>
+   <!-- gshop_box10 end -->
+   <div class="gshop_box">
+    <a href="#">
+      <ul class="gs_img">
+        <li><img src="./img/gsimg11.jpg" alt="x"></li>
+      </ul>
+      <ul class="gs_tit">
+        <li>저탄소 · 재활용 · 생분해</li>
+      </ul>
+      <ul class="gs_txt">
+        <li>[널담] 락토오보 아메리칸쿠키, 6개입</li>
+        <li><p class="price">19,800원</p></li>
+      </ul>
+      <ul class="gs_icon">
+        <li><img src="./img/preservation-koala (1).svg" alt="x"></li>
+        <li>
+          <p>코알라 102마리 보존중 <span>10,228%</span></p>
+          <p class="badge">기부목표 달성시 코알라뱃지 지급</p>
+        </li>
+      </ul>
+    </a>
+   </div>
+   <!-- gshop_box11 end -->
+   <div class="gshop_box">
+    <a href="#">
+      <ul class="gs_img">
+        <li><img src="./img/gsimg12.jpg" alt="x"></li>
+      </ul>
+      <ul class="gs_tit">
+        <li>저탄소 · 재활용 · 생분해</li>
+      </ul>
+      <ul class="gs_txt">
+        <li>[NELLIE'S] 넬리 소다 산소표백제, 블루, 1kg</li>
+        <li><p class="price">23,500원</p></li>
+      </ul>
+      <ul class="gs_icon">
+        <li><img src="./img/preservation-koala (1).svg" alt="x"></li>
+        <li>
+          <p>코알라 102마리 보존중 <span>10,228%</span></p>
+          <p class="badge">기부목표 달성시 코알라뱃지 지급</p>
+        </li>
+      </ul>
+    </a>
+   </div>
+   <!-- gshop_box12 end -->
+  </div>
+  <!-- gshop_wrap end -->
+</div>
+<!-- con2 end -->
+<div class="con3">
+  <div class="tit">
+    <a href="#">에코딜 ></a>
+    <p>눈여겨본 제품이라면 놓칠 수 없는 핫딜찬스!</p>
+  </div>
+  <!-- con3 tit end -->
+  <div class="deel_wrap">
+    <div class="deel_box">
+     <a href="#">
+      <ul class="deel_img">
+        <li><img src="./img/deelimg1.png" alt="x"></li>
+      </ul>
+      <ul class="deel_tit">
+        <li><span>재활용</span></li>
+        <li><p>남은시간<span class="time">3일7시간42분00초</span></p><p class="cnt">4개남음</p></li>
+      </ul>
+      <ul class="deel_txt">
+        <li>[아임에코] 현대카드 Our Bag (Black) 아워백</li>
+        <li><p class="sale">20%</p><p class="price">47,200원</p><p class="cost">59,000</p></li>
+      </ul>
+     </a>
+    </div>
+    <!-- deel_box1 end -->
+    <div class="deel_box">
+      <a href="#">
+       <ul class="deel_img">
+         <li><img src="./img/deelimg2.png" alt="x"></li>
+       </ul>
+       <ul class="deel_tit">
+         <li><span>재활용</span></li>
+         <li><p>남은시간<span class="time">3일7시간42분00초</span></p><p class="cnt">4개남음</p></li>
+       </ul>
+       <ul class="deel_txt">
+         <li>[아임에코] 현대카드 Our Bag (Orange/Blue) 아워백</li>
+         <li><p class="sale">20%</p><p class="price">47,200원</p><p class="cost">59,000</p></li>
+       </ul>
+      </a>
+    </div>
+    <!-- deel_box2 end -->
+    <div class="deel_box">
+      <a href="#">
+       <ul class="deel_img">
+         <li><img src="./img/deelimg3.png" alt="x"></li>
+       </ul>
+       <ul class="deel_tit">
+         <li><span>재활용</span></li>
+         <li><p>남은시간<span class="time">3일7시간42분00초</span></p><p class="cnt">4개남음</p></li>
+       </ul>
+       <ul class="deel_txt">
+         <li>[아임에코] 현대카드 Our Bag (Green) 아워백</li>
+         <li><p class="sale">20%</p><p class="price">47,200원</p><p class="cost">59,000</p></li>
+       </ul>
+      </a>
+    </div>
+    <!-- deel_box3 end -->
+    <div class="deel_box">
+      <a href="#">
+       <ul class="deel_img">
+         <li><img src="./img/deelimg4.png" alt="x"></li>
+       </ul>
+       <ul class="deel_tit">
+         <li><span>재활용</span></li>
+         <li><p>남은시간<span class="time">3일7시간42분00초</span></p><p class="cnt">4개남음</p></li>
+       </ul>
+       <ul class="deel_txt">
+         <li>[크놀라] 100% 수제 소량생산 그래놀라 크놀라, 시그니쳐, 200g</li>
+         <li><p class="sale">10%</p><p class="price">9,900원</p><p class="cost">11,000</p></li>
+       </ul>
+      </a>
+    </div>
+    <!-- deel_box3 end -->
+  </div>
+  <!-- deel_wrap end -->
+</div>
+<!-- con3 end -->
+<div class="con4">
+  <div class="c_slide_wrap">
+   <div class="c_slide">
+    <a href="#">
+      <img src="./img/item-banner.svg" alt="x">
+    </a>
+   </div>
+   <div class="c_slide">
+    <a href="#">
+      <img src="./img/item-banner2.png" alt="x">
+    </a>
+   </div>
+   <div class="c_slide">
+    <a href="#">
+      <img src="./img/item-banner3.png" alt="x">
+    </a>
+   </div>
+  </div>
+  <!-- c_slide_wrap end -->
+</div>
+<!-- con4 end -->
+<div class="con5">
+  <div class="tit">
+    <a href="#">MD추천</a>
+  </div>
+  <div class="md_wrap">
+    <div class="md_box">
+      <a href="#">
+       <ul class="md_img">
+        <li><img src="./img/md_img1.jpg" alt="x"></li>
+       </ul>
+       <ul class="md_tit">
+        <li>[밀키요] 꾸덕한 수제 바스크 치즈케이크, 150g, 2개</li>
+        <li>14,900원</li>
+       </ul>
+      </a>
+    </div>
+    <!-- md_box end -->
+    <div class="md_box">
+      <a href="#">
+       <ul class="md_img">
+        <li><img src="./img/md_img2.jpg" alt="x"></li>
+       </ul>
+       <ul class="md_tit">
+        <li>[밀키요] 서울 붕어빵 슈크림, 500g</li>
+        <li>12,900원</li>
+       </ul>
+      </a>
+    </div>
+    <!-- md_box end -->
+    <div class="md_box">
+      <a href="#">
+       <ul class="md_img">
+        <li><img src="./img/md_img3.jpg" alt="x"></li>
+       </ul>
+       <ul class="md_tit">
+        <li>[워커힐호텔] 전복삼계탕 1.2kg*2팩</li>
+        <li>68,000원</li>
+       </ul>
+      </a>
+    </div>
+    <!-- md_box end -->
+    <div class="md_box">
+      <a href="#">
+       <ul class="md_img">
+        <li><img src="./img/md_img4.jpg" alt="x"></li>
+       </ul>
+       <ul class="md_tit">
+        <li>[워커힐호텔] 명월관 갈비탕 600g*3팩</li>
+        <li>51,000원</li>
+       </ul>
+      </a>
+    </div>
+    <!-- md_box end -->
+  </div>
+  <!-- md_wrap end -->
+</div>
+<!-- con5 end -->
+<div class="con6">
+  <div class="tit">
+    <span>건강함을 담은 비건푸드</span>
+  </div>
+  <div class="vegan_wrap">
+    <div class="vegan_box">
+      <a href="#">
+      <ul class="vegan_img">
+        <li><img src="./img/md_img5.jpg" alt="x"></li>
+      </ul>
+      <ul class="vegan_tit">
+        <li><span>플라스틱저감</span></li>
+        <li>[헬렌스쿠키] 아트 제로웨이스트 비건 쿠키, 말차</li>
+        <li>9,600원</li>
+      </ul>
+      <ul class="vegan_icon">
+        <li><img src="./img/preservation-koala (1).svg" alt="x">
+          <p>펭귄 0마리 보존중</p></li>
+        <li>0%</li>
+      </ul>
+      </a>
+    </div>
+    <!-- vegan_box end -->
+    <div class="vegan_box">
+      <a href="#">
+      <ul class="vegan_img">
+        <li><img src="./img/md_img6.jpg" alt="x"></li>
+      </ul>
+      <ul class="vegan_tit">
+        <li><span>플라스틱저감</span></li>
+        <li>[헬렌스쿠키] 아트 제로웨이스트 비건 쿠키, 말차</li>
+        <li>9,600원</li>
+      </ul>
+      <ul class="vegan_icon">
+        <li><img src="./img/preservation-koala (1).svg" alt="x">
+          <p>펭귄 0마리 보존중</p></li>
+        <li>0%</li>
+      </ul>
+      </a>
+    </div>
+    <!-- vegan_box end -->
+    <div class="vegan_box">
+      <a href="#">
+      <ul class="vegan_img">
+        <li><img src="./img/md_img7.png" alt="x"></li>
+      </ul>
+      <ul class="vegan_tit">
+        <li><span>플라스틱저감</span></li>
+        <li>[헬렌스쿠키] 아트 제로웨이스트 비건 쿠키, 말차</li>
+        <li>9,600원</li>
+      </ul>
+      <ul class="vegan_icon">
+        <li><img src="./img/preservation-koala (1).svg" alt="x">
+          <p>펭귄 0마리 보존중</p></li>
+        <li>0%</li>
+      </ul>
+      </a>
+    </div>
+    <!-- vegan_box end -->
+    <div class="vegan_box">
+      <a href="#">
+      <ul class="vegan_img">
+        <li><img src="./img/md_img8.jpg" alt="x"></li>
+      </ul>
+      <ul class="vegan_tit">
+        <li><span>플라스틱저감</span></li>
+        <li>[헬렌스쿠키] 아트 제로웨이스트 비건 쿠키, 말차</li>
+        <li>9,600원</li>
+      </ul>
+      <ul class="vegan_icon">
+        <li><img src="./img/preservation-koala (1).svg" alt="x">
+          <p>펭귄 0마리 보존중</p></li>
+        <li>0%</li>
+      </ul>
+      </a>
+    </div>
+    <!-- vegan_box end -->
+     
+  </div>
+  <!-- vegan_wrap end -->
+</div>
+<!-- con6 end -->
+<div class="con7">
+  <div class="item_banner">
+    <img src="./img/item-banner2.svg" alt="x">
+  </div>
+</div>
+<!-- con7 end -->
+<div class="con8">
+  <p>Follow @imeco_official</p>
+</div>
+<!-- con8 end -->
+</div>
+   <!-- contents container end -->
+
+<div class="con9">
+  <div class="tit">
+    <span>아임에코는 오늘도 지구생각중</span>
+  </div>
+  <div class="news_wrap">
+    <div class="news_box">
+      <a href="#">
+      <ul class="news_img">
+        <li><img src="./img/news_img1.jpg" alt="x"></li>
+      </ul>
+      <ul class="news_tit">
+        <li>일회용품을 대체하는 아임에코 'GREEN REUSABLE' 다회용기 서비스</li>
+      </ul>
+      <ul class="news_txt">
+        <li>자연에서 즐기는 페스티벌이 오래오래 그 즐거움을 잃지 않도록, 아임에코 ‘GREEN REUSABLE‘ 친환경 다회용기 서비스 런칭!</li>
+      </ul>
+      </a>
+    </div>
+  <!-- news_box end -->
+  <div class="news_box">
+    <a href="#">
+    <ul class="news_img">
+      <li><img src="./img/news_img2.png" alt="x"></li>
+    </ul>
+    <ul class="news_tit">
+      <li>아임에코, 10% 재생원료 보틀 제품 출시..."생수업계 최초"</li>
+    </ul>
+    <ul class="news_txt">
+      <li>아임에코 국내 최초 보틀 투 보틀(Bottle to Bottle) 제품인, 10% 재생원료 사용 r-pet 리:가벼운샘 출시</li>
+    </ul>
+    </a>
+  </div>
+<!-- news_box end -->
+<div class="news_box">
+  <a href="#">
+  <ul class="news_img">
+    <li><img src="./img/news_img3.png" alt="x"></li>
+  </ul>
+  <ul class="news_tit">
+    <li>글래드 호텔, 벚꽃 가든·업사이클링 가구 비치된 ‘에코 플래닛’ 선봬</li>
+  </ul>
+  <ul class="news_txt">
+    <li>아임에코, 호텔에서 사용 후 회수된 무라벨 생수의 병뚜껑으로 만든 업사이클링 가구 '에코퍼니처' 생산 및 글래드호텔 로비 전시</li>
+  </ul>
+  </a>
+</div>
+<!-- news_box end -->
+<div class="news_box">
+  <a href="#">
+  <ul class="news_img">
+    <li><img src="./img/news_img4.png" alt="x"></li>
+  </ul>
+  <ul class="news_tit">
+    <li>아임에코, 솔라리아니시테츠호텔에 친환경 객실 카드키 제공</li>
+  </ul>
+  <ul class="news_txt">
+    <li>친환경 브랜드 아임에코, 빈 생수병을 회수하여 만든, 재생PET 친환경 객실 카드키 솔라리아니시테츠호텔에 공급</li>
+  </ul>
+  </a>
+</div>
+<!-- news_box end -->
+  </div>
+  <!-- news_wrap end -->
+</div>
+<!-- con9 end -->
+
+  </section>
+  <!-- contents end -->
+<footer id="footer">
+ <div class="container">
+  <div class="copyright">
+   <div class="tit">
+    <p>아임에코</p>
+   </div>
+   <div class="copy">
+    <p>법인명 : 산수음료㈜ ㅣ 대표자 : 박윤자 ㅣ 사업자 등록번호 :132-81-02037 <br>
+    사업장 소재지 : 경기도 남양주시 수동면 비룡로900번길 40-15 <br>
+    서울 사무소 : 서울특별시 서초구 강남대로30길 66 산수빌딩 7층 <br>
+    통신판매등록번호 : 2018-화도수동-0527 ㅣ 개인정보관리책임자 : 김영환 <br>
+    이메일 : customer@sansu.co.kr ㅣ 팩스 : 02-571-4541 <br>
+    COPYRIGHT ⓒ SANSU. ALL RIGHTS RESERVED.</p>
+    <p><a href="#">사업자등록확인</a><a href="#">토스페이먼츠구매안전 서비스</a></p>
+  </div>
+</div>
+<!-- copyright end -->
+<div class="center">
+ <div class="tit">
+  <p>고객센터</p>
+ </div>
+ <div class="counsel">
+  <ul>
+    <li><a href="#">1:1 고객문의 ></a></li>
+    <li><a href="#">대량구매(OEM)·협찬·입점제의 ></a></li>
+    <li>02-3497-9063 <span>평일 09:00 - 17:00 ㅣ 점심시간 11:30 - 12:30</span></li>
+  </ul>
+ </div>
+ <div class="instar">
+  <p><img src="./img/insta-icon.svg" alt="x"><span>@imeco_official</span></p>
+ </div>
+</div>
+<!-- center end -->
+<div class="fmenu">
+  <a href="#">아임에코 소개</a>
+  <a href="#">이용약관</a>
+  <a href="#"><strong>개인정보처리방침</strong></a>
+  <a href="#">인재채용</a>
+</div>
+<!-- fmenu end -->
+    </div>
+  </footer>
+  <!-- footer end -->
+ </div>
+ <!-- wrap end -->
+
+ <div class="side_btn">
+  <ul>
+   <li id="message"><img id="m_open" src="./img/message.webp" alt="x"><i id="m_close" class="fa-solid fa-xmark"></i></li>
+   <li><a href="#"><img src="./img/category-icon1.svg" alt="x"></a></li>
+   <li id="topBtn"><img src="./img/top-btn.svg" alt="x"></li>
+  </ul>
+ </div>
+
+<div class="message_wrap">
+  <div class="message_box">
+    <div class="home">
+      <div class="tit">
+        <ul>
+          <li><img src="./img/imecotxt.webp" alt="x"></li>
+          <li><p>아임에코몰</p><span>운영시간보기 ></span></li>
+        </ul>
+      </div>
+      <!-- tit end -->
+      <div class="txt">
+        <div class="info">
+          <ul>
+            <li><img src="./img/imecotxt.webp" alt="x"></li>
+            <li><p>아임에코몰</p><span>아임에코몰에 오신 것을 환영해요😄<br>궁금한 사항을 선택해 주세요.</span></li>
+          </ul>
+        </div>
+        <!-- info end -->
+        <div class="inquiry">
+          <button>문의하기<i class="fa-solid fa-paper-plane"></i></button>
+        </div>
+        <div class="info_txt">
+          <p><span>●</span>몇 분 내에 답변 받으실 수 있어요</p>
+        </div>
+      </div>
+      <!-- txt end -->
+      <div class="call">
+        <p>다른방법으로 문의</p>
+        <i class="fa-solid fa-phone"></i>
+      </div>
+      <!-- call end -->
+      <div class="channel">
+        <p>채널톡 이용중</p>
+      </div>
+    </div>
+    <!-- home end -->
+  </div>
+  <!-- message_box end -->
+   <div class="message_menu">
+    <ul>
+      <li><i class="fa-solid fa-house"></i><p>홈</p></li>
+      <li><i class="fa-solid fa-comment"></i><p>대화</p></li>
+      <li><i class="fa-solid fa-gear"></i><p>설정</p></li>
+    </ul>
+   </div>
+   <!-- message_menu end -->
+</div>
+<!-- message_wrap end -->
+
+
+</body>
+</html>

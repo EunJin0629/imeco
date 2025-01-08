@@ -1,0 +1,28 @@
+@charset "utf-8";
+#contents{width: 100%; height: auto; border-bottom: 1px solid #e7e7e7; padding-bottom: 100px; box-sizing: border-box;}
+.center_wrap>.center_tit{width:100%; height:100px; font-size:1.8em; display: flex; align-items:flex-end; justify-content:center; margin-bottom:40px; font-weight: bold;}
+.customer{width: 100%; display: flex; justify-content: space-between;}
+.center_menu>ul{width: 200px;}
+.center_menu>ul>li{width: 100%; height: 56px; border: 1px solid #e7e7e7; border-bottom: 0;}
+.center_menu>ul>li:first-child{background: #222222; color: #ffffff;}
+.center_menu>ul>li:first-child>a>span{color: #ffffff;}
+.center_menu>ul>li:last-child{border-bottom: 1px solid #e7e7e7;}
+.center_menu>ul>li>a{display: flex; width: 100%; height: 56px; align-items: center; justify-content: space-between; padding: 0 15px; box-sizing: border-box; font-weight: bold; font-size: 0.9em;}
+.center_menu>ul>li>a>span{color: #777777;}
+
+.notice_wrap{width: 980px;}
+.notice_tit{width: 100%; height: 50px; font-weight: bold; font-size: 1.4em;}
+.notice{width: 100%;}
+.notice>table{width: 100%; border-top: 2px solid #333333; border-collapse: collapse;}
+.notice>table>thead{width: 100%; height: 50px; background: #f9f9f9; text-align: center; font-weight: bold;}
+.notice>table>thead>tr{width: 100%; height: 50px; color: #555555; font-size: 0.8em;border-bottom: 1px solid #e7e7e7;}
+.notice>table>thead>tr>td:first-child{width: 150px; height: 50px; line-height: 50px; text-align: center;}
+.notice>table>thead>tr>td:last-child{width: 150px; height: 50px; line-height: 50px; text-align: center;}
+
+.notice>table>tbody>tr{height: 50px; border-bottom: 1px solid #e7e7e7;}
+.notice>table>tbody>tr>td:first-child{width: 150px; height: 50px; line-height: 50px; text-align: center;}
+.notice>table>tbody>tr>td:last-child{width: 150px; height: 50px; line-height: 50px; text-align: center;}
+
+.notice_btn{display: flex; justify-content: center; height: 100px; align-items: center;}
+.notice_btn>button{border: none; background: none; color: #777777; font-weight: bold; width: 40px; height: 40px; margin: 0 5px; font-size: 1.1em; border-radius: 15px;}
+.notice_btn>.active{color: #54d472; box-shadow: 0 0 10px #e7e7e7;}

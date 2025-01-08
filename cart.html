@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>장바구니 | 아임에코몰</title>
+ <link rel="icon" href="./img/favicon.ico">
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+ <link rel="stylesheet" href="./css/reset.css">
+ <link rel="stylesheet" href="./css/common.css">
+ <link rel="stylesheet" href="./css/cart.css">
+ <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+ <script src="https://kit.fontawesome.com/4dc87784b3.js" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+ <script src="./js/common.js" defer></script>
+ <script src="./js/cart.js" defer></script>
+</head>
+<body>
+ <div class="wrap">
+  <header id="header">
+   <div class="container">
+    <div class="htop">
+     <div class="logo">
+      <a href="index.html">
+       <img src="./img/logo.svg" alt="x">
+      </a>
+     </div>
+     <!-- logo end -->
+     <div class="login">
+      <ul>
+       <li><a href="login.html">로그인</a><span>|</span></li>
+       <li><a href="join.html">회원가입</a><span>|</span></li>
+       <li class="center"><p>고객센터</p>
+        <ul class="center_list">
+         <li><a href="notice.html">공지사항</a></li>
+         <li><a href="#">자주하는문의</a></li>
+         <li><a href="#">1:1문의</a></li>
+         <li><a href="#">제안하기</a></li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+     <!-- login end -->
+    </div>
+    <!-- htop end -->
+<div class="hbottom">
+ <div class="left">
+  <ul class="category">
+   <li>
+    <p><img src="./img/category-btn.svg" alt="x"><span>카테고리</span></p>
+   </li>
+   <ul class="sub_category">
+    <li><a href="#"><img src="./img/category-icon1.svg" alt="x"><p>정기배송</p></a></li>
+    <li><a href="#"><img src="./img/category-icon2.svg" alt="x"><p>그린샵</p></a></li>
+    <li><a href="#"><img src="./img/category-icon3.svg" alt="x"><p>에코딜</p></a></li>
+    <li><a href="#"><img src="./img/category-icon4.svg" alt="x"><p>베스트</p></a></li>
+    <li><a href="#"><img src="./img/category-icon5.svg" alt="x"><p>MD추천</p></a></li>
+    <li><a href="#"><img src="./img/category-icon6.svg" alt="x"><p>생수음료</p></a></li>
+    <li><a href="#"><img src="./img/category-icon7.svg" alt="x"><p>식품</p></a></li>
+    <li><a href="#"><img src="./img/category-icon8.svg" alt="x"><p>생활용품</p></a></li>
+    <li><a href="#"><img src="./img/category-icon9.svg" alt="x"><p>뷰티</p></a></li>
+    <li><a href="#"><img src="./img/category-icon10.svg" alt="x"><p>주방</p></a></li>
+    <li><a href="#"><img src="./img/category-icon11.svg" alt="x"><p>욕실</p></a></li>
+    <li><a href="#"><img src="./img/category-icon12.svg" alt="x"><p>패션잡화</p></a></li>
+    <li><a href="#"><img src="./img/category-icon13.svg" alt="x"><p>유아동</p></a></li>
+    <li><a href="#"><img src="./img/category-icon14.svg" alt="x"><p>반려동물</p></a></li>
+   </ul>
+  </ul>
+<!-- category end -->
+      <ul class="menu">
+       <li><a href="#">i'm eco</a></li>
+       <li><a href="#">제로웨이스트</a></li>
+       <li><a href="#">이벤트</a></li>
+      </ul>
+     </div>
+     <!-- left end -->
+     <div class="right">
+      <form action="" method="get">
+       <ul class="search">
+        <li><input type="text" placeholder="아임에코 고마운샘"><img src="./img/search-icon.svg" alt="x"></li>
+       </ul>
+      </form>
+      <!-- search form end -->
+      <div class="my">
+       <ul>
+        <li><a href="#"><img src="./img/wish-icon.svg" alt="x"></a></li>
+        <li><a href="#"><img src="./img/my-icon.svg" alt="x"></a></li>
+        <li><a href="cart.html"><img src="./img/cart-icon.svg" alt="x"></a></li>
+       </ul>
+      </div>
+      <!-- my end -->
+     </div>
+     <!-- right end -->
+    </div>
+    <!-- hbottom end -->
+   </div>
+   <!-- header container end -->
+  </header>
+  <!-- header end -->
+  <div class="header_null"></div>
+  <!-- header에 fixed값으로 인해 nav영역에 겹쳐짐 >> 이를 방지하기위해 빈박스한개 생성 -->
+
+<section id="contents">
+ <div class="container">
+   <div class="cart_tit">
+    <p>장바구니</p>
+   </div>
+   <!-- cart_tit end -->
+    <div class="cart_wrap">
+     <div class="cart_delivery">
+      <ul>
+       <li class="active"><p>일반배송(<span class="cnt">0</span>)</p></li>
+       <li><p>정기배송(<span class="cnt">0</span>)</p></li>
+      </ul>
+     </div>
+     <!-- cart_delivery end -->
+      <div class="cart">
+        <div class="product_wrap">
+          <ul class="select">
+            <form action="" method="post">
+              <li><label for="Allcheck"><input type="checkbox" name="product" id="Allcheck">전체선택</label></li>
+              <li><p>선택상품 삭제</p></li>
+            </form>
+          </ul>
+          <!-- select end -->
+           <div class="pro_list">
+            <div class="eco">
+              <ul>
+                <li><img src="./img/patner-delivery.svg" alt="x"><p>by</p><span>이노푸드</span></li>
+                <li><p>10/31(목)</p><span>도착예정</span></li>
+              </ul>
+            </div>
+            <!-- eco end -->
+            <div class="pro_box">
+              <div class="pro_info">
+                <form action="" method="post">
+                  <ul>
+                    <li><input type="checkbox" name="product"></li>
+                    <li><img src="./img/cart_img1.jpg" alt="x"><p>[상품명]상품설명입니다.</p></li>
+                    <li class="pro_cnt">
+                    <p class="minus">-</p><span class="num">1</span><p class="plus">+</p>  
+                    </li>
+                    <li><p>상품금액</p><br><span>19,900원</span></li>
+                    <li><p>배송비</p><br><span>3,500원</span></li>
+                    <li><button type="button">x</button></li>
+                  </ul>
+                </form>
+              </div>
+              <!-- pro_info end -->
+              <div class="pro_price">
+                <ul>
+                  <li><p>상품가격<span id="price">19,900</span>원</p></li>
+                  <img src="./img/bl-plus.svg" alt="x">
+                  <li><p>배송비<span id="delivery">3,500</span>원</p></li>
+                  <img src="./img/bl-minus.svg" alt="x">
+                  <li><p>할인금액<span id="sale">0</span>원</p></li>
+                  <img src="./img/bl-equal.svg" alt="x">
+                  <li><span id="total">0</span>원</li>
+                </ul>
+              </div>
+              <!-- pro_price end -->
+            </div>
+            <!-- pro_box end -->
+           </div>
+           <!-- pro_list end -->
+           <div class="pro_list">
+            <div class="eco">
+              <ul>
+                <li><img src="./img/patner-delivery.svg" alt="x"><p>by</p><span>이노푸드</span></li>
+                <li><p>10/31(목)</p><span>도착예정</span></li>
+              </ul>
+            </div>
+            <!-- eco end -->
+            <div class="pro_box">
+              <div class="pro_info">
+                <form action="" method="post">
+                  <ul>
+                    <li><input type="checkbox" name="product"></li>
+                    <li><img src="./img/cart_img1.jpg" alt="x"><p>[상품명]상품설명입니다.</p></li>
+                    <li class="pro_cnt">
+                    <p class="minus">-</p><span class="num">1</span><p class="plus">+</p>  
+                    </li>
+                    <li><p>상품금액</p><br><span>19,900원</span></li>
+                    <li><p>배송비</p><br><span>3,500원</span></li>
+                    <li><button type="button">x</button></li>
+                  </ul>
+                </form>
+              </div>
+              <!-- pro_info end -->
+              <div class="pro_price">
+                <ul>
+                  <li><p>상품가격<span id="price">19,900</span>원</p></li>
+                  <img src="./img/bl-plus.svg" alt="x">
+                  <li><p>배송비<span id="delivery">3,500</span>원</p></li>
+                  <img src="./img/bl-minus.svg" alt="x">
+                  <li><p>할인금액<span id="sale">0</span>원</p></li>
+                  <img src="./img/bl-equal.svg" alt="x">
+                  <li><span id="total">0</span>원</li>
+                </ul>
+              </div>
+              <!-- pro_price end -->
+            </div>
+            <!-- pro_box end -->
+           </div>
+           <!-- pro_list end -->
+        </div>
+        <!-- product_wrap end -->
+        <div class="pay_wrap">
+          <div class="pay_box">
+            <div class="address">
+              <ul>
+                <li><span>배송지</span></li>
+                <li><p>[61190]광주 북구 호동로 6-6 <br>
+                  광주국제직업전문학교 (중흥동)</p></li>
+                <li class="add_search">배송지 변경</li>
+              </ul>
+            </div>
+            <!-- address end -->
+             <div class="pay">
+              <ul>
+                <li><p>상품금액</p><span id="pay">19,900원</span></li>
+                <li><p>상품할인금액</p><span id="pay_sale">-0원</span></li>
+                <li><p>배송비</p><span id="pay_delivery">+3,500원</span></li>
+              </ul>
+              <ul class="pay_total">
+                <li><p>결제예정금액</p><span id="pay_total">0원</span></li>
+              </ul>
+             </div>
+             <!-- pay end -->
+          </div>
+          <!-- pay_box end -->
+           <div class="pay_btn">
+            <button type="button">주문하기</button>
+           </div>
+        </div>
+        <!-- pay_wrap end -->
+      </div>
+      <!-- cart end -->
+    </div>
+    <!-- cart_wrap end -->
+  </div>
+  <!-- contents container end -->
+</section>
+<!-- contents end -->
+
+  <footer id="footer">
+   <div class="container">
+    <div class="copyright">
+     <div class="tit">
+      <p>아임에코</p>
+     </div>
+     <div class="copy">
+      <p>법인명 : 산수음료㈜ ㅣ 대표자 : 박윤자 ㅣ 사업자 등록번호 :132-81-02037 <br>
+      사업장 소재지 : 경기도 남양주시 수동면 비룡로900번길 40-15 <br>
+      서울 사무소 : 서울특별시 서초구 강남대로30길 66 산수빌딩 7층 <br>
+      통신판매등록번호 : 2018-화도수동-0527 ㅣ 개인정보관리책임자 : 김영환 <br>
+      이메일 : customer@sansu.co.kr ㅣ 팩스 : 02-571-4541 <br>
+      COPYRIGHT ⓒ SANSU. ALL RIGHTS RESERVED.</p>
+      <p><a href="#">사업자등록확인</a><a href="#">토스페이먼츠구매안전 서비스</a></p>
+    </div>
+  </div>
+  <!-- copyright end -->
+  <div class="center">
+   <div class="tit">
+    <p>고객센터</p>
+   </div>
+   <div class="counsel">
+    <ul>
+      <li><a href="#">1:1 고객문의 ></a></li>
+      <li><a href="#">대량구매(OEM)·협찬·입점제의 ></a></li>
+      <li>02-3497-9063 <span>평일 09:00 - 17:00 ㅣ 점심시간 11:30 - 12:30</span></li>
+    </ul>
+   </div>
+   <div class="instar">
+    <p><img src="./img/insta-icon.svg" alt="x"><span>@imeco_official</span></p>
+   </div>
+  </div>
+  <!-- center end -->
+  <div class="fmenu">
+    <a href="#">아임에코 소개</a>
+    <a href="#">이용약관</a>
+    <a href="#"><strong>개인정보처리방침</strong></a>
+    <a href="#">인재채용</a>
+  </div>
+  <!-- fmenu end -->
+      </div>
+    </footer>
+    <!-- footer end -->
+   </div>
+   <!-- wrap end -->
+  
+   <div class="side_btn">
+    <ul>
+     <li id="message"><img id="m_open" src="./img/message.webp" alt="x"><i id="m_close" class="fa-solid fa-xmark"></i></li>
+     <li><a href="#"><img src="./img/category-icon1.svg" alt="x"></a></li>
+     <li id="topBtn"><img src="./img/top-btn.svg" alt="x"></li>
+    </ul>
+   </div>
+  
+  <div class="message_wrap">
+    <div class="message_box">
+      <div class="home">
+        <div class="tit">
+          <ul>
+            <li><img src="./img/imecotxt.webp" alt="x"></li>
+            <li><p>아임에코몰</p><span>운영시간보기 ></span></li>
+          </ul>
+        </div>
+        <!-- tit end -->
+        <div class="txt">
+          <div class="info">
+            <ul>
+              <li><img src="./img/imecotxt.webp" alt="x"></li>
+              <li><p>아임에코몰</p><span>아임에코몰에 오신 것을 환영해요😄<br>궁금한 사항을 선택해 주세요.</span></li>
+            </ul>
+          </div>
+          <!-- info end -->
+          <div class="inquiry">
+            <button>문의하기<i class="fa-solid fa-paper-plane"></i></button>
+          </div>
+          <div class="info_txt">
+            <p><span>●</span>몇 분 내에 답변 받으실 수 있어요</p>
+          </div>
+        </div>
+        <!-- txt end -->
+        <div class="call">
+          <p>다른방법으로 문의</p>
+          <i class="fa-solid fa-phone"></i>
+        </div>
+        <!-- call end -->
+        <div class="channel">
+          <p>채널톡 이용중</p>
+        </div>
+      </div>
+      <!-- home end -->
+    </div>
+    <!-- message_box end -->
+     <div class="message_menu">
+      <ul>
+        <li><i class="fa-solid fa-house"></i><p>홈</p></li>
+        <li><i class="fa-solid fa-comment"></i><p>대화</p></li>
+        <li><i class="fa-solid fa-gear"></i><p>설정</p></li>
+      </ul>
+     </div>
+     <!-- message_menu end -->
+  </div>
+  <!-- message_wrap end -->
+ </div>
+ <!-- wrap end -->
+</body>
+</html>
